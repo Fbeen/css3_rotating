@@ -1,0 +1,61 @@
+.container {
+  width: 400px;
+  height: 800px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-perspective: 800px;
+	 -moz-perspective: 800px;
+	   -o-perspective: 800px;
+		  perspective: 800px;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+	 -moz-transform-style: preserve-3d;
+	   -o-transform-style: preserve-3d;
+		  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+	 -moz-transition: -moz-transform 1s;
+	   -o-transition: -o-transform 1s;
+		  transition: transform 1s;
+}
+
+#card figure {
+	margin:0;
+	padding:0;
+	display: block;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+	border: 2px solid #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-style:normal;
+	text-align: center;
+	background: rgba(  255, 255, 255, 1 );
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+}
+
+#card .front {
+}
+
+#card .back {
+  -webkit-transform: rotateY( -180deg );
+	 -moz-transform: rotateY( -180deg );
+	   -o-transform: rotateY( -180deg );
+		  transform: rotateY( -180deg );
+}
+
+#card.show-front {
+}
+#card.show-back {
+  -webkit-transform: rotateY( -180deg );
+	 -moz-transform: rotateY( -180deg );
+	   -o-transform: rotateY( -180deg );
+		  transform: rotateY( -180deg );
+}

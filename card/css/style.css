@@ -1,0 +1,40 @@
+body {
+	background-color:#CCC;
+	margin:0;
+	padding:0;
+}
+
+a:link { color:#999; text-decoration:none; }
+a:visited { color:#999; text-decoration:none; }
+a:hover { text-decoration:underline; }
+a:active { color:#666; }
+
+ul.menu {
+	list-style:none;
+}
+
+ul.menu li {
+	display:inline;
+}
+
+ul.menu li a {
+	display:inline-block;
+	width:75px;
+	border:1px solid #FFF;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-style:normal;
+	text-align:center;
+	text-decoration:none;
+	color:#FFF;
+	padding:4px 0;
+}
+
+ul.menu li a:hover {
+	background-color:#999;
+}
+
+#footer {
+	text-align:right;
+	margin-top:50px;
+	margin-right:100px;
+}
